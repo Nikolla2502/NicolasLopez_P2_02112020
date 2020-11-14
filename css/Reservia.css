@@ -210,7 +210,7 @@ p
 {
     height: 150px;
     width: 35%;
-    padding: 6px 0px 6px 6px;
+    padding: 6px 0px 10px 6px;
     border-radius: 25px 0 0 25px;
     float:left;
 }
@@ -224,7 +224,16 @@ p
     margin: 5% 5% 5% 5%;
     color: black;
 }
-
+.photohotel1 li
+{
+    display: inline;
+    color:#0065FC;
+    
+}
+.photohotel1 ul
+{
+    margin:0 5% 2% 0;
+}
 /* Hotel à Marseille */
 #hotel2
 {
@@ -260,7 +269,15 @@ p
     margin: 0 5% 5% 5%;
     color: black;
 }
-
+.photohotel2 li
+{
+    display: inline;
+    color:#0065FC;
+    
+}
+.photohotel2 ul
+{
+    margin:0 5% 2% 0;
 
 /* activites à Marseille */
 #activites-Marseille
