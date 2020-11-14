@@ -1,0 +1,297 @@
+/* Remise à zero */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+   font-family: 'Raleway' , sans-serif;
+    margin: auto;
+}
+
+/* fin de la remise a zero */
+/* Parametres generaux lien et liste à puce */
+a
+{
+    text-decoration: none;
+}
+a:hover
+{
+    transform: scale(1);
+    transition: .3s;
+    
+}
+ul
+{
+  list-style-type: none;
+}
+
+
+/* Header + Nav */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.navigation
+{
+    display: flex;
+}
+header img
+{
+    padding: 0 0 0 3%;
+    height: 25%;
+    width: 25%;
+}
+nav a:visited
+{
+    color: #0065FC;
+}
+.hebergements
+{
+    border-bottom: 2px solid  #0065FC;
+}
+.activites
+{
+    color:black;
+    border-bottom: 2px solid #F2F2F2;
+}
+.activites a:visited
+{
+    color: black;
+}
+
+/* Texte trouvez votre hebergement en centre ville */
+.texte1
+{
+    text-align: center;
+    height: 2.85%;
+    padding-left: 3%;
+    padding-top: 35px;
+   
+}
+.texte2
+{
+    
+    text-align: center;
+    height: 2.85%;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    
+}
+/* Partie recherche */
+#recherche
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+   
+   
+}
+.position
+{
+    background-color:#F2F2F2;
+    border-radius: 10px 0 0 10px; 
+    padding: 2% 2% 2% 2%;
+
+   
+}
+input::-webkit-input-placeholder
+{
+    color: black;
+    padding: 12px;
+    
+}
+.lieu
+{
+    font-size: 1.8em;
+    width:50%;
+        
+}
+.search
+{
+    color: white;
+    background-color: #0065FC;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+/* fin de la partie recherche */
+/* Filtre de recherche */
+#filtres
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtres-title
+{
+    display: flex;
+    align-items: center;
+}
+.filtres-categorie
+{
+    display: flex;
+    align-items: center;
+    border:2px solid #F2F2F2;
+    border-radius: 50px;
+    margin: 2px 2px;
+    padding: 0;
+    
+}
+.filtres-icone
+{
+    background-color:#DEEBFF;
+    display: flex;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+}
+
+
+/* Fin des filtres */
+
+/* info +de 500 logements */
+#info
+{
+    display: flex;
+    
+    
+}
+.info1
+{
+    color:   #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    padding: 4px 7px 7px 10px;
+}
+
+/* hotel populaires */
+p
+{
+    font-size:1.17em ;
+    font-weight: 900;
+}
+#hotel1
+{
+    display: flex;
+    flex-direction: column;
+    background-color:#DEEBFF;
+    
+}
+.photohotel1
+{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px #c2bfbf;
+    margin: 2% 5% 0 5%;
+    height: 30%;
+
+}
+.photohotel1 img
+{
+    height: 150px;
+    width: 35%;
+    padding: 6px 0px 6px 6px;
+    border-radius: 25px 0 0 25px;
+}
+.nomhotel1
+{
+    padding-left: 45%;
+    
+}
+
+/* Hotel à Marseille */
+#hotel2
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+     
+}
+.photohotel2
+{
+    background-color: white;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 30px #c2bfbf;
+    margin: 2% 5% 0 5%;
+    align-items: center;
+}
+.photohotel2 img
+{
+    height: 60%;
+    width: 100%;
+    padding: 6px 6px 0px 6px;
+    border-radius:25px 25px 0 0;
+}
+.nomhotel2
+{
+    padding-left: 60%;
+    padding-bottom: 10%;
+    
+}
+
+/* activites à Marseille */
+#activites-Marseille
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+}
+.activite
+{
+    box-shadow: 1px 1px 30px #c2bfbf;
+    border-radius: 25px;
+    margin: 2% 5% 0 5%;
+}
+.activite img
+{
+    height: 60%;
+    width: 96%;
+    border-radius: 25px 25px 0 0;
+    margin: 2% 2% 2% 2%;
+    
+}
+
+/* Bas de page Footer 3 elements */
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color:#F2F2F2;
+    color: black;
+    line-height: 200%;
+    font-size: 130%;
+    padding: 5% 0 5% 0;
+    padding-left: 5%;
+}
+.bloc-footer a:visited
+{
+    color: black;
+}
+.bloc-footer a
+{
+    color: black;
+}
