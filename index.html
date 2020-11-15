@@ -17,9 +17,9 @@
         <img src="./images/logo/Reservia.png" alt="logoreservia">
         <nav class="navigation">
             <ul>
-                <li><a href="#hotel1">Hébergements</a></li>
-                <li><a href="#activites-Marseille">Activités</a></li>
-                <li><a href="#inscription">S'incrire</a></li>
+                <li><a class="header-hebergements" href="#hotel1">Hébergements</a></li>
+                <li><a class="header-activites" href="#activites-Marseille">Activités</a></li>
+                <li><a class="header-inscription" href="#inscription">S'incrire</a></li>
             </ul>
         </nav>
     </header>
@@ -30,9 +30,9 @@
 
     <!--Partie recherche-->
     <div id="recherche">
-        <div class="position"><i class="fas fa-map-marker-alt"></i></div>
-        <input class="lieu" type="texte" placeholder="Marseille,France">
-        <button class="search" type="submit"><i class="fas fa-search"></i></button>
+        <div class="recherche-position"><i class="fas fa-map-marker-alt"></i></div>
+        <input class="recherche-lieu" type="texte" placeholder="Marseille,France">
+        <button class="recherche-search" type="submit"><i class="fas fa-search"></i></button>
     </div>
 
     <div id="filtres">
@@ -66,17 +66,18 @@
     <!-- texte-->
 
     <div id="info">
-        <div class="info1"><i class="fas fa-info"></i></div>
-        <div class="logements">
+         <div class="icone-info"><i class="fas fa-info"></i>
+         </div>
+         <div class="texte-logements">
             Plus de 500 logements sont disponibles dans cette ville
-        </div>
+         </div>
     </div>
 
     <section id="hotel1">
         Les plus populaires <i class="fas fa-chart-line"></i>
 
 
-        <div class="photohotel1">
+        <div class="carte-hotel1">
             <a href="#">
                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="soleil matin">
                 <h3>Hôtel Le soleil du matin</h3>
@@ -91,7 +92,7 @@
             </a>
         </div>
 
-        <div class="photohotel1">
+        <div class="carte-hotel1">
             <a href="#">
                 <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="coeur de l'eau">
                 <h3>Au coeur de l'eau Chambre d'hôtes</h3>
@@ -101,13 +102,13 @@
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
+                    <li><span style="color:#F2F2F2"><i class="fas fa-star"></i></span></li>
                 </ul>
             </a>
         </div>
         
 
-        <div class="photohotel1">
+        <div class="carte-hotel1">
             <a href="#">
                 <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="bleublanc">
                 <h3>Hôtel Tout bleu et Blanc</h3>
@@ -117,7 +118,7 @@
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
+                    <li><span style="color:#F2F2F2"><i class="fas fa-star"></i></span></li>
                 </ul>
             </a>
         </div>
@@ -126,7 +127,7 @@
     <!--hebergements trouvés 6 HOTELS-->
     <section id="hotel2">
         Hebergements à Marseille
-        <div class="photohotel2">
+        <div class="carte-hotel2">
             <a href="#">
                 <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="cannebiere">
                 <h3>la Cannebière</h3>
@@ -136,11 +137,11 @@
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
+                    <li><span style="color:#F2F2F2"><i class="fas fa-star"></i></span></li>
                 </ul>
             </a>
         </div>
-        <div class="photohotel2">
+        <div class="carte-hotel2">
             <a href="#">
                 <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="port">
                 <h3>Hôtel du port</h3>
@@ -155,7 +156,7 @@
             </a>
          </div>
        
-         <div class="photohotel2">
+         <div class="carte-hotel2">
             <a href="#">
                 <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg " alt="mouettes">
                 <h3>Hôtel les mouettes</h3>
@@ -165,11 +166,11 @@
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
+                    <li><span style="color:#F2F2F2"><i class="fas fa-star"></i></span></li>
                 </ul>
             </a>
         </div>
-        <div class="photohotel2">
+        <div class="carte-hotel2">
             <a href="#">
                 <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="mer">
                 <h3>Hôtel de la mer</h3>
@@ -178,12 +179,12 @@
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
+                    <li><span style="color:#F2F2F2"><i class="fas fa-star"></i></span></li>
+                    <li><span style="color:#F2F2F2"><i class="fas fa-star"></i></span></li>
                 </ul>
             </a>
         </div>
-        <div class="photohotel2">
+        <div class="carte-hotel2">
             <a href="#">
                 <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="panier">
                 <h3>Auberge Le Panier</h3>
@@ -193,11 +194,11 @@
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
                     <li><i class="fas fa-star"></i></li>
-                    <li><i class="fas fa-star"></i></li>
+                    <li><span style="color:#F2F2F2"><i class="fas fa-star"></i></span></li>
                 </ul>
             </a>
         </div>
-        <div class="photohotel2">
+        <div class="carte-hotel2">
             <a href="#">
                 <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="amina">
                 <h3>Hôtel chez Amina</h3>
@@ -264,9 +265,9 @@
                 <li>
                     <p>A propos</p>
                 </li>
-                <li class="regular"><a href="#">Fonctionnement du site</a></li>
-                <li class="regular"><a href="#">Conditions générales de vente</a></li>
-                <li class="regular"><a href="#">Données et confidentialité</a></li>
+                <li><a href="#fonctionnement">Fonctionnement du site</a></li>
+                <li><a href="#conditions">Conditions générales de vente</a></li>
+                <li><a href="#donnees">Données et confidentialité</a></li>
             </ul>
         </div>
         <div class="bloc-footer">
@@ -274,8 +275,8 @@
                 <li>
                     <p>Nos hébergements</p>
                 </li>
-                <li class="regular"><a href="#">Charte qualité</a></li>
-                <li class="regular"><a href="#">Soumettre votre hotel</a></li>
+                <li><a href="#chartequalite">Charte qualité</a></li>
+                <li><a href="#votrehotel">Soumettre votre hotel</a></li>
             </ul>
         </div>
         <div class="bloc-footer">
@@ -283,8 +284,8 @@
                 <li>
                     <p>Assistance</p>
                 </li>
-                <li class="regular"><a href="#">Centre d'aide</a></li>
-                <li class="regular"><a href="#">Nous contacter</a></li>
+                <li><a href="#aide">Centre d'aide</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
             </ul>
         </div>
     </footer>
