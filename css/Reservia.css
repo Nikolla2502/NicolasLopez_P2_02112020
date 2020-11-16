@@ -191,13 +191,20 @@ p
     font-size:1.17em ;
     font-weight: 900;
 }
+.populaires
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    
+}
 #hotel1
 {
     display: flex;
     flex-direction: column;
     background-color:#F2F2F2;
     height: 580px;
-    padding-top:90px;
+    padding-top:45px;
     padding-bottom:35px;
     
 }
@@ -206,9 +213,9 @@ p
     background-color: white;
     border-radius: 25px;
     box-shadow: 1px 1px 15px #c2bfbf;
-    margin: 0 3% 5px 3%;
+    margin: 0 5% 5px 5%;
     height: 145px;
-    
+    width:335px;
    
     
     
@@ -217,19 +224,19 @@ p
 {
     object-fit: cover;
     height: 135px;
-    width: 38%;
-    padding: 6px 0px 6px 6px;
+    width: 127px;
+    margin: 6px 0px 6px 6px;
     border-radius: 25px 0 0 25px;
     float:left;
 }
 .carte-hotel1 h3
 {
-   margin: 5% 10% 0% 42%;
+   margin: 5% 10% 0% 43%;
    color: black;
 }
 .carte-hotel1 p
 {
-    margin: 2% 5% 6% 42%;
+    margin: 2% 5% 6% 43%;
     color: black;
     font-weight: 100;
     font-size: 0.98em;
@@ -243,10 +250,11 @@ p
 }
 .carte-hotel1 ul
 {
-    margin-left: 42% ;
+    margin-left: 43% ;
 
 }
-Hotel à Marseille
+/*## Hotel à Marseille ##*/
+
 #hotel2
 {
     display: flex;
@@ -263,7 +271,7 @@ Hotel à Marseille
     border-radius: 25px;
     box-shadow: 1px 1px 30px #c2bfbf;
     margin: 0% 5% 5% 5%;
-    align-items: center;
+    
 }
 .carte-hotel2 img
 {
@@ -298,6 +306,7 @@ Hotel à Marseille
 }
   
 /* activites à Marseille */
+
 #activites-Marseille
 {
     display: flex;
@@ -355,12 +364,45 @@ footer
     color: black;
 }
 /* ############################# */
-/* ######Responsive############# */
-/* Format au dela de la tablette */
-@media all and (min-device-width: 770px)
+/* ####  Responsive       ###### */
+/* ####  Format tablette  ######*/
+/* #############################*/
+
+@media all and (min-device-width: 768px)
 {
-    .navigation li
-   {
-        display: inline;
-   } 
+    .navigation li{
+     display: inline;
+    } 
+    /* ### Hotel à Marseille ### */
+    #hotel2{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: white;
+    }
+    .carte-hotel2{
+    background-color: white;
+    height: 200px;
+    width: 335px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 30px #c2bfbf;
+    margin: 0% 2% 5% 2%;
+    }
+    
+    /* ### Activités à Marseille ###*/
+    #activites-Marseille{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    }
+    .activite
+    {
+    height:190px;
+    width: 335px;
+    box-shadow: 1px 1px 30px #c2bfbf;
+    border-radius: 25px;
+    margin: 2% 5% 0 5%;
+    }
+
+
+
 }
