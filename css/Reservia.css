@@ -11,8 +11,15 @@ body
    font-family: 'Raleway' , sans-serif;
     margin: auto;
 }
+body
+{
+    background:
+    linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url (iPhone 8 - 1.png) no-repeat top center;
 
+}
 /* fin de la remise a zero */
+
 /* Parametres generaux lien et liste à puce */
 a
 {
@@ -41,7 +48,9 @@ header
 .navigation
 {
     display: flex;
+    
 }
+
 header img
 {
     padding: 5% 0 0 5%;
@@ -95,7 +104,7 @@ nav a:visited
 {
     background-color:#F2F2F2;
     border-radius: 10px 0 0 10px; 
-    /* padding: 2% 2% 2% 2%; */
+    padding: 2% 2% 2% 2%;
 
    
 }
@@ -107,7 +116,7 @@ input::-webkit-input-placeholder
 }
 .recherche-lieu
 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     width:60%;
         
 }
@@ -187,6 +196,9 @@ p
     display: flex;
     flex-direction: column;
     background-color:#F2F2F2;
+    height: 580px;
+    padding-top:90px;
+    padding-bottom:35px;
     
 }
 .carte-hotel1
@@ -194,40 +206,47 @@ p
     background-color: white;
     border-radius: 25px;
     box-shadow: 1px 1px 15px #c2bfbf;
-    margin: 2% 5% 0 5%;
+    margin: 0 3% 5px 3%;
     height: 145px;
-    text-align:right; 
+    
+   
+    
     
 }
 .carte-hotel1 img
 {
-    height: 150px;
-    width: 35%;
-    padding: 6px 0px 10px 6px;
+    object-fit: cover;
+    height: 135px;
+    width: 38%;
+    padding: 6px 0px 6px 6px;
     border-radius: 25px 0 0 25px;
     float:left;
 }
 .carte-hotel1 h3
 {
-   margin: 5% 5% 5% 5%;
+   margin: 5% 10% 0% 42%;
    color: black;
 }
 .carte-hotel1 p
 {
-    margin: 5% 5% 5% 5%;
+    margin: 2% 5% 6% 42%;
     color: black;
+    font-weight: 100;
+    font-size: 0.98em;
 }
 .carte-hotel1 li
 {
     display: inline;
     color:#0065FC;
+    font-size: 0.7em;
     
 }
 .carte-hotel1 ul
 {
-    margin:0 5% 2% 0;
+    margin-left: 42% ;
+
 }
-/* Hotel à Marseille */
+Hotel à Marseille
 #hotel2
 {
     display: flex;
@@ -240,37 +259,42 @@ p
 {
     background-color: white;
     height: 200px;
+    width: 335px;
     border-radius: 25px;
     box-shadow: 1px 1px 30px #c2bfbf;
-    margin: 2% 5% 0 5%;
+    margin: 0% 5% 5% 5%;
     align-items: center;
 }
 .carte-hotel2 img
 {
-    height: 60%;
-    width: 100%;
-    padding: 6px 6px 0px 6px;
+    object-fit: cover;
+    height: 115px;
+    width: 325px;
     border-radius:25px 25px 0 0;
+    margin: 5px 0 0 5px;;
+ 
 }
 .carte-hotel2 h3
 {
-   margin: 0 5% 5% 5%;
+   margin: 0 5% 0 5%;
    color: black;
 }
 .carte-hotel2 p
 {
-    margin: 0 5% 5% 5%;
+    margin: 1% 5% 0 5%;
     color: black;
+    font-weight: 100;
+    font-size: 0.98em;
 }
 .carte-hotel2 li
 {
     display: inline;
     color:#0065FC;
-    
+    font-size: 0.7em;
 }
 .carte-hotel2 ul
 {
-    margin:0 5% 2% 0;
+    margin:0 5% 2% 5%;
 }
   
 /* activites à Marseille */
@@ -283,21 +307,23 @@ p
 .activite
 {
     height:190px;
+    width: 335px;
     box-shadow: 1px 1px 30px #c2bfbf;
     border-radius: 25px;
     margin: 2% 5% 0 5%;
 }
 .activite img
 {
-    height: 60%;
-    width: 96%;
+    object-fit: cover;
+    height: 135px;
+    width: 335px;
     border-radius: 25px 25px 0 0;
-    margin: 2% 2% 2% 2%;
+    
     
 }
 .activite h3
 {
-   margin: 5% 5% 5% 5%;
+   margin: 3% 0 0 6%;
    color: black;
 }
 .activite p
@@ -327,4 +353,14 @@ footer
 .bloc-footer a
 {
     color: black;
+}
+/* ############################# */
+/* ######Responsive############# */
+/* Format au dela de la tablette */
+@media all and (min-device-width: 770px)
+{
+    .navigation li
+   {
+        display: inline;
+   } 
 }
