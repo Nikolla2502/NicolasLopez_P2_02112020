@@ -167,7 +167,7 @@ input::-webkit-input-placeholder
 
 /* Fin des filtres */
 
-/* info +de 500 logements */
+/*### info +de 500 logements ###*/
 #info
 {
     display: flex;
@@ -185,7 +185,7 @@ input::-webkit-input-placeholder
     padding: 4px 7px 7px 10px;
 }
 
-/* hotel populaires */
+/*### hotel populaires ###*/
 p
 {
     font-size:1.17em ;
@@ -211,7 +211,7 @@ p
 .carte-hotel1
 {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 30px;
     box-shadow: 1px 1px 15px #c2bfbf;
     margin: 0 5% 5px 5%;
     height: 145px;
@@ -225,7 +225,7 @@ p
     object-fit: cover;
     height: 135px;
     width: 127px;
-    margin: 6px 0px 6px 6px;
+    margin: 6px 0px 6px 5px;
     border-radius: 25px 0 0 25px;
     float:left;
 }
@@ -268,7 +268,7 @@ p
     background-color: white;
     height: 200px;
     width: 335px;
-    border-radius: 25px;
+    border-radius: 30px;
     box-shadow: 1px 1px 30px #c2bfbf;
     margin: 0% 5% 5% 5%;
     
@@ -278,7 +278,7 @@ p
     object-fit: cover;
     height: 115px;
     width: 325px;
-    border-radius:25px 25px 0 0;
+    border-radius:23px 23px 0 0;
     margin: 5px 0 0 5px;;
  
 }
@@ -341,7 +341,7 @@ p
     color: black;
 }
 
-/* Bas de page Footer 3 elements */
+/*### Bas de page Footer 3 elements ###*/
 
 footer
 {
@@ -350,7 +350,7 @@ footer
     flex-direction: column;
     background-color:#F2F2F2;
     color: black;
-    line-height: 200%;
+    line-height: 150%;
     font-size: 130%;
     padding: 5% 0 5% 0;
     padding-left: 5%;
@@ -402,7 +402,17 @@ footer
     border-radius: 25px;
     margin: 2% 5% 0 5%;
     }
-
+    footer{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        background-color:#F2F2F2;
+        color: black;
+        line-height: 150%;
+        font-size: 130%;
+        padding: 5% 0 5% 0;
+        
+    }
 
 
 }
