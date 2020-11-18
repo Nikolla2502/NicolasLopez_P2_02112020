@@ -11,13 +11,7 @@ body
    font-family: 'Raleway' , sans-serif;
     margin: auto;
 }
-body
-{
-    background:
-    linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
-    url (iPhone 8 - 1.png) no-repeat top center;
 
-}
 /* fin de la remise a zero */
 
 /* Parametres generaux lien et liste à puce */
@@ -36,18 +30,20 @@ ul
 }
 
 /*### Header + Nav ###*/
+
 .nav li
 {
  display: inline;
 } 
 header img
 {
-    padding: 5% 0 0 5%;
-    width: 35%;
+    padding: 5px 0 0 5px;
+    width: 20%;
 }
 .header-hebergements
 {
     color: #0065FC;
+    font-weight: 900;
 }
 .header-hebergements a:visited
 {
@@ -56,6 +52,7 @@ header img
 .header-activites
 {
     color:black;
+    font-weight: 900;
 }
 .header-activites a:visited
 {
@@ -64,10 +61,12 @@ header img
 .header-inscription1
 {
     color: #0065FC;
+    font-weight: 900;
 }
 .header-inscription2
 {
     color: #0065FC;
+    font-weight: 900;
 }
 .header-inscription1 a:visited
 {
@@ -83,7 +82,7 @@ header img
 .texte1
 {
     text-align: center;
-    height: 2.85%;
+    
     padding-left: 3%;
     padding-top: 35px;
    
@@ -195,7 +194,7 @@ input::-webkit-input-placeholder
 {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     
 }
 #hotel1
@@ -330,7 +329,7 @@ input::-webkit-input-placeholder
     align-items: center;
     background-color: white;
 }
-#activites-Marseille p
+.text-activites
 {
     font-size:1.17em ;
     font-weight: 900;
@@ -389,13 +388,13 @@ footer p
     color: black;
 }
 
-/* ############################# */
-/* ###   Responsive       ###### */
-/* ### Format Telephone   ###### */
-/* ############################# */
+            /* ############################# */
+            /* ###   Responsive       ###### */
+            /* ### Format Telephone   ###### */
+            /* ############################# */
 @media all and (max-device-width: 767px)
 {
-    
+    /*### Header Nav Telephone ###*/
     header
     {
     display: flex;
@@ -419,19 +418,34 @@ footer p
     }
     .header-hebergements
     {
-    border-bottom: 2px solid  #0065FC;
-    width: 50%;
+    border-bottom: 3px solid  #0065FC;
+    padding-bottom:10px;
+    margin: 0 100% 0 0;
+    
+    
     }
     .header-activites
     {
-    border-bottom: 2px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom:10px;
+    padding: 0 100% 0 100%;
+            
     }
+    nav ul
+    {
+        display: flex;
+        align-content: stretch;
+        padding-top:5%;
+        
+    }
+
+    /*### Header Nav Telephone ### Fin ###*/
 } 
 
-/* ############################# */
-/* ####  Responsive       ###### */
-/* ####  Format tablette  ###### */
-/* ############################# */
+                    /* ############################# */
+                    /* ####  Responsive       ###### */
+                    /* ####  Format tablette  ###### */
+                    /* ############################# */
 
 @media all and (min-device-width: 768px)
 {
@@ -452,6 +466,10 @@ footer p
     .header-activites
     {
     border-top: 5px solid #F2F2F2;
+    }
+    nav ul 
+    {
+        margin-top: 2px;
     }
     /* ### Hotel à Marseille ### */
     
@@ -478,6 +496,7 @@ footer p
     flex-wrap: wrap;
     background-color: white;
     }
+
     .activite
     {
     height:190px;
@@ -506,10 +525,10 @@ footer p
 
 
 }
-/* ############################# */
-/* ####  Responsive       ###### */
-/* ####  Format desktop   ###### */
-/* ############################# */
+                        /* ############################# */
+                        /* ####  Responsive       ###### */
+                        /* ####  Format desktop   ###### */
+                        /* ############################# */
 @media all and (min-device-width: 1024px)
 {
 
@@ -577,7 +596,7 @@ footer p
         height: 115px;
         width: 235px;
         border-radius:23px 23px 0 0;
-        margin: 5px 0 0 5px;;
+        margin: 5px 0 0 5px;
      
     }
     #activites-Marseille
@@ -588,17 +607,11 @@ footer p
         align-items: center;
         background-color: white;
     }
-    #activites-Marseille:nth-child(2)
-    {    
-        
-        border: 5px solid black;
-    }
-    #activites-Marseille p
+    .text-activites
     {
-    font-size:1.17em ;
-    font-weight: 900;
-    margin: 5px 20% 5px 20%; 
-    vertical-align: top;
+        
     }
+
+
 
 }
