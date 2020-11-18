@@ -102,6 +102,7 @@ header img
 {
     display: flex;
     justify-content: center;
+    
     padding-top: 10px;
     padding-bottom: 25px;
 }
@@ -118,6 +119,7 @@ header img
 input::-webkit-input-placeholder
 {
     color: black;
+    
     padding: 12px;
     font-weight: 900;
     font-family: 'Raleway';
@@ -126,7 +128,10 @@ input::-webkit-input-placeholder
 {
     font-size: 1.5em;
     width:60%;
-        
+    border-bottom : 2px solid #F2F2F2;
+    border-top:   2px solid #F2F2F2;
+    border-right: 0 solid white;
+    border-left: 0 solid white;
 }
 .recherche-search
 {
@@ -140,24 +145,26 @@ input::-webkit-input-placeholder
 }
 /* fin de la partie recherche */
 /* Filtre de recherche */
+.filtres-title
+{
+    margin-left: 10px;
+}
 #filtres
 {
     display: flex;
     flex-wrap: wrap;
-}
-.filtres-title
-{
-    display: flex;
+    margin: 10px 0 20px 20px;
     
 }
+
 .filtres-categorie
 {
     display: flex;
     align-items: center;
     border:2px solid #F2F2F2;
     border-radius: 50px;
-    heigth: 50px;
-    margin: 2px 2px;
+    height: 50px;
+    margin: 6px 2px;
     padding: 0;
     
 }
@@ -166,15 +173,15 @@ input::-webkit-input-placeholder
     background-color:#DEEBFF;
     display: flex;
     border-radius: 50px;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     align-items: center;
     justify-content: center;
     color: #0065FC;
 }
 .filtres-texte
 {
-    padding: 0 20px 0 20px;
+    padding: 0 15px 0 15px;
 }
 
 /* Fin des filtres */
@@ -184,7 +191,7 @@ input::-webkit-input-placeholder
 {
     display: flex;
     justify-content: space-between;
-    
+    margin: 15px 10px 40px 10px;
     
 }
 .icone-info
@@ -195,6 +202,7 @@ input::-webkit-input-placeholder
     height: 30px;
     width: 30px;
     padding: 4px 7px 7px 10px;
+    margin-right: 10px;
 }
 
 /*### hotel populaires ###*/
@@ -203,8 +211,16 @@ input::-webkit-input-placeholder
 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    
+    margin: 40px 0 25px 0;
+}
+.populaires p
+{
+    margin-right: 70px
+}
+.populaires i
+{
+    margin: 3px 0 0 70px;
+    font-size: 1.3em;
 }
 #hotel1
 {
@@ -214,6 +230,7 @@ input::-webkit-input-placeholder
     background-color:#F2F2F2;
     height: 580px;
     width: 100%;
+    padding-bottom: 25px;
 
     
 }
@@ -229,7 +246,7 @@ input::-webkit-input-placeholder
     background-color: white;
     border-radius: 30px;
     box-shadow: 1px 1px 15px #c2bfbf;
-    margin: 0 5% 5px 5%;
+    margin: 0 5% 10px 5%;
     height: 145px;
     width:335px;
    
@@ -241,7 +258,7 @@ input::-webkit-input-placeholder
     object-fit: cover;
     height: 135px;
     width: 127px;
-    margin: 6px 0px 6px 5px;
+    margin: 5px 0px 5px 5px;
     border-radius: 25px 0 0 25px;
     float:left;
 }
@@ -270,7 +287,20 @@ input::-webkit-input-placeholder
 
 }
 /*## Hotel à Marseille ##*/
-
+.texte1-hotel2
+{
+    font-size:1.17em ;
+    font-weight: 900;
+    align-items: left;
+    margin: 40px 75px 30px 5%; 
+}
+.texte2-hotel2
+{
+    font-size:1.17em ;
+    font-weight: 900;
+    align-items: left;
+    margin: 40px 75px 30px 5%; 
+}
 #hotel2
 {
     display: flex;
@@ -280,12 +310,7 @@ input::-webkit-input-placeholder
     
      
 }
-#hotel2 p
-{
-    font-size:1.17em ;
-    font-weight: 900;
-    margin: 5px 20% 5px 20%; 
-}
+
 .carte-hotel2
 {
     background-color: white;
@@ -293,7 +318,7 @@ input::-webkit-input-placeholder
     width: 335px;
     border-radius: 30px;
     box-shadow: 1px 1px 30px #c2bfbf;
-    margin: 0% 5% 5% 5%;
+    margin: 5px 5% 5px 5%;
     
 }
 .carte-hotel2 img
@@ -327,6 +352,13 @@ input::-webkit-input-placeholder
 {
     margin:0 5% 2% 5%;
 }
+.afficherplus
+{
+    font-size:1.17em ;
+    font-weight: 900;
+    align-items: left;
+    margin: 36px 75px 60px 20px;
+}
   
 /*### activites à Marseille ###*/
 
@@ -336,12 +368,13 @@ input::-webkit-input-placeholder
     flex-direction: column;
     align-items: center;
     background-color: white;
+    margin-bottom:50px;
 }
 .text-activites
 {
     font-size:1.17em ;
     font-weight: 900;
-    margin: 5px 20% 5px 20%; 
+    margin: 0 0 7px 20px; 
     vertical-align: auto;
 }
 .activite
@@ -350,7 +383,7 @@ input::-webkit-input-placeholder
     width: 335px;
     box-shadow: 1px 1px 30px #c2bfbf;
     border-radius: 25px;
-    margin: 2% 5% 0 5%;
+    margin: 25px 5% 0 5%;
 }
 .activite img
 {
@@ -379,9 +412,14 @@ footer
     color: black;
     line-height: 150%;
     font-size: 130%;
-    padding: 0 0 0 0;
+    height: 485px;
+    padding-bottom:50px;
+    padding-left:33px;
+    padding-top:50px;
+    
     
 }
+
 footer p
 {
     font-size:1.17em ;
@@ -445,6 +483,10 @@ footer p
         width: 100%;
         
     }
+    .texte2-hotel2
+    {
+        display:none; 
+    }
 
     /*### Header Nav Telephone ### Fin ###*/
 } 
@@ -479,12 +521,17 @@ footer p
         margin-top: 2px;
     }
     /* ### Hotel à Marseille ### */
-    
-    #hotel2{
+    .texte2-hotel2
+    {
+        display:none; 
+    }
+    #hotel2
+    {
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
     background-color: white;
+    align-items: center;
     }
     .carte-hotel2{
     background-color: white;
@@ -494,6 +541,7 @@ footer p
     box-shadow: 1px 1px 30px #c2bfbf;
     margin: 0% 2% 5% 2%;
     }
+
     
     /* ### Activités à Marseille ###*/
     #activites-Marseille
@@ -570,7 +618,10 @@ footer p
     height: 145px;
     width:345px;
     }
-
+    .texte1-hotel2
+    {
+        display:none; 
+    }
     #hotel2
     {
         display: flex;
