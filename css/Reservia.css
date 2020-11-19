@@ -102,7 +102,7 @@ header img
 {
     display: flex;
     justify-content: center;
-    
+    max-width:420px;
     padding-top: 10px;
     padding-bottom: 25px;
 }
@@ -119,13 +119,14 @@ header img
 input::-webkit-input-placeholder
 {
     color: black;
-    
+    background-color: white;
     padding: 12px;
     font-weight: 900;
     font-family: 'Raleway';
 }
 .recherche-lieu
 {
+    
     font-size: 1.5em;
     width:60%;
     border-bottom : 2px solid #F2F2F2;
@@ -133,15 +134,22 @@ input::-webkit-input-placeholder
     border-right: 0 solid white;
     border-left: 0 solid white;
 }
-.recherche-search
+.recherche-search1
 {
     color: white;
     background-color: #0065FC;
     border-radius: 10px 10px 10px 10px;
     height: 50px;
     width: 50px; 
-    
-
+}
+.recherche-search2
+{
+    color: white;
+    background-color: #0065FC;
+    font-size: 1.3em;
+    border-radius: 0px 10px 10px 0px;
+    height: 50px;
+    width: 135px; 
 }
 /* fin de la partie recherche */
 /* Filtre de recherche */
@@ -190,7 +198,7 @@ input::-webkit-input-placeholder
 #info
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 15px 10px 40px 10px;
     
 }
@@ -230,6 +238,7 @@ input::-webkit-input-placeholder
     background-color:#F2F2F2;
     height: 580px;
     width: 100%;
+    /* max-width:400px; */
     padding-bottom: 25px;
 
     
@@ -352,14 +361,20 @@ input::-webkit-input-placeholder
 {
     margin:0 5% 2% 5%;
 }
-.afficherplus
+.afficherplus1
 {
     font-size:1.17em ;
     font-weight: 900;
-    align-items: left;
+    
     margin: 36px 75px 60px 20px;
 }
-  
+.afficherplus2
+{
+    font-size:1.17em ;
+    font-weight: 900;
+    align-items: center;
+    margin: 0 75px 60px 10%;
+} 
 /*### activites à Marseille ###*/
 
 #activites-Marseille
@@ -370,13 +385,14 @@ input::-webkit-input-placeholder
     background-color: white;
     margin-bottom:50px;
 }
-.text-activites
+.texte-activites
 {
     font-size:1.17em ;
     font-weight: 900;
-    margin: 0 0 7px 20px; 
+    margin: 0 0 7px 5%; 
     vertical-align: auto;
 }
+
 .activite
 {
     height:190px;
@@ -410,20 +426,19 @@ footer
     flex-direction: column;
     background-color:#F2F2F2;
     color: black;
-    line-height: 150%;
+    line-height: 160%;
     font-size: 130%;
     height: 485px;
     padding-bottom:50px;
     padding-left:33px;
     padding-top:50px;
-    
-    
 }
 
 footer p
 {
     font-size:1.17em ;
-    font-weight: 900;  
+    font-weight: 900;
+    line-height: 180%;
 }
 .bloc-footer a:visited
 {
@@ -462,6 +477,10 @@ footer p
     justify-content: space-around;
     width: 100%;
     }
+    .recherche-search2
+    {
+        display:none;
+    }
     .header-hebergements
     {
     border-bottom: 3px solid  #0065FC;
@@ -487,7 +506,11 @@ footer p
     {
         display:none; 
     }
-
+    .afficherplus2
+    {
+        display:none;
+    }
+    
     /*### Header Nav Telephone ### Fin ###*/
 } 
 
@@ -520,6 +543,14 @@ footer p
     {
         margin-top: 2px;
     }
+    .recherche-search1
+    {
+        display:none;
+    }
+    #recherche
+    {
+        margin-left: 55px;
+    }
     /* ### Hotel à Marseille ### */
     .texte2-hotel2
     {
@@ -541,6 +572,14 @@ footer p
     box-shadow: 1px 1px 30px #c2bfbf;
     margin: 0% 2% 5% 2%;
     }
+    .afficherplus1
+    {
+        display:none;
+    }
+    .afficherplus2
+    {
+        display:center;
+    }
 
     
     /* ### Activités à Marseille ###*/
@@ -561,29 +600,26 @@ footer p
     margin: 2% 2% 0 2%;
     }
 
-    footer
-    {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        background-color:#F2F2F2;
-        color: black;
-        line-height: 150%;
-        font-size: 130%;
-        padding: 5% 0 5% 0;
-        
-    }
+    
     #hotel1 p
     {
         margin: 5px 20% 5px 20%;
     }
-
+footer
+    {
+        justify-content: space-between;
+        flex-direction: row;
+        background-color:#F2F2F2;
+        padding: 50px 370px 55px 50px;
+        height: 218px;
+        
+    }
 
 }
-                        /* ############################# */
-                        /* ####  Responsive       ###### */
-                        /* ####  Format desktop   ###### */
-                        /* ############################# */
+                        /* ################################ */
+                        /* ####  Responsive          ###### */
+                        /* ####  Format desktop 1024 ###### */
+                        /* ################################ */
 @media all and (min-device-width: 1024px)
 {
 
@@ -621,6 +657,9 @@ footer p
     .texte1-hotel2
     {
         display:none; 
+    }
+    .texte2-hotel2{
+        display: inline;
     }
     #hotel2
     {
@@ -665,8 +704,31 @@ footer p
         align-items: center;
         background-color: white;
     }
-
-
-
+    footer
+    {
+        justify-content: space-between;
+        flex-direction: row;
+        background-color:#F2F2F2;
+        padding: 50px 370px 55px 50px;
+        height: 218px;
+        
+    }
+}
+            /* ################################ */
+            /* ####  Responsive          ###### */
+            /* ####  Format desktop 1440 ###### */
+            /* ################################ */
+@media all and (min-device-width: 1024px)
+{
+    footer
+    {
+        justify-content: space-between;
+        flex-direction: row;
+        background-color:#F2F2F2;
+        padding: 50px 370px 55px 50px;
+        height: 218px;
+                
+    }
+        
 
 }
