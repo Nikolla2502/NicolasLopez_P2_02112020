@@ -19,11 +19,7 @@ a
 {
     text-decoration: none;
 }
-a:hover
-{
-    transform: scale(1);
-    transition: .3s;
-}
+
 ul
 {
   list-style-type: none;
@@ -49,7 +45,7 @@ nav
     height: 30px;
     width:50%;
 }
-.header-inscription
+.header-inscription1
 {
     color: #0065FC;
     font-weight: 900;
@@ -58,10 +54,17 @@ nav
     
 }
 
-.header-inscription a:visited
+.header-inscription1 a:visited
 {
     color: #0065FC;
 }
+
+
+.header-inscription2 a:visited
+{
+    color: #0065FC;
+}
+
 
 .header-hebergements
 {
@@ -168,6 +171,11 @@ input::-webkit-input-placeholder
     width: 135px; 
     border:1px solid  #0065FC;
 }
+.recherche-search2:hover
+{
+    color:#0065FC;
+    background-color:  white;
+}
 /* fin de la partie recherche */
 /* Filtre de recherche */
 .filtres-title
@@ -193,6 +201,7 @@ input::-webkit-input-placeholder
     padding: 0;
     
 }
+
 .filtres-icone
 {
     background-color:#DEEBFF;
@@ -204,10 +213,18 @@ input::-webkit-input-placeholder
     justify-content: center;
     color: #0065FC;
 }
+.filtres-icone:hover
+{
+    color: #DEEBFF;
+    background-color:#0065FC;
+}
+
 .filtres-texte
 {
     padding: 0 15px 0 15px;
 }
+
+
 
 /* Fin des filtres */
 
@@ -215,8 +232,8 @@ input::-webkit-input-placeholder
 #info
 {
     display: flex;
-    justify-content: space-around;
-    margin: 15px 10px 40px 10px;
+    
+    margin: 15px 10px 40px 5%;
     
 }
 .icone-info
@@ -227,7 +244,11 @@ input::-webkit-input-placeholder
     height: 30px;
     width: 30px;
     padding: 4px 7px 7px 10px;
-    margin-right: 10px;
+    
+}
+.texte-logements
+{
+    padding:8px 0 0 8px;
 }
 
 /*### hotel populaires ###*/
@@ -255,7 +276,7 @@ input::-webkit-input-placeholder
     background-color:#F2F2F2;
     height: 580px;
     width: 100%;
-    /* max-width:400px; */
+    
     padding-bottom: 25px;
 
     
@@ -275,9 +296,10 @@ input::-webkit-input-placeholder
     margin: 0 5% 10px 5%;
     height: 145px;
     width:335px;
-   
-    
-    
+}
+.carte-hotel1:hover
+{
+    box-shadow: 5px 5px 20px black;
 }
 .carte-hotel1 img
 {
@@ -324,7 +346,6 @@ input::-webkit-input-placeholder
 {
     font-size:1.17em ;
     font-weight: 900;
-    align-items: left;
     margin: 40px 75px 30px 5%; 
 }
 #hotel2
@@ -401,6 +422,7 @@ input::-webkit-input-placeholder
     align-items: center;
     background-color: white;
     margin-bottom:50px;
+    height:1334px;
 }
 .texte-activites
 {
@@ -410,7 +432,7 @@ input::-webkit-input-placeholder
     vertical-align: auto;
 }
 
-.activite
+.activite-vieuxport, .activite-fort, .activite-frioul, .activite-calanques, .activite-garde, .activite-longchamps
 {
     height:190px;
     width: 335px;
@@ -418,7 +440,7 @@ input::-webkit-input-placeholder
     border-radius: 25px;
     margin: 25px 5% 0 5%;
 }
-.activite img
+.activite-vieuxport img, .activite-fort img, .activite-frioul img, .activite-calanques img, .activite-garde img, .activite-longchamps img
 {
     object-fit: cover;
     height: 135px;
@@ -427,7 +449,8 @@ input::-webkit-input-placeholder
     
     
 }
-.activite h3
+
+.activite-vieuxport h3, .activite-fort h3, .activite-frioul h3, .activite-calanques h3, .activite-garde h3, .activite-longchamps h3
 {
    margin: 3% 0 0 6%;
    color: black;
@@ -472,50 +495,10 @@ footer p
             /* ############################# */
 @media all and (max-device-width: 767px)
 {
-    /*### Header Nav Telephone ###*/
-    /* header
-    {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
-    .header-inscription1
-    {
-    padding: 5% 5% 0 0;
-    }
     .header-inscription2
     {
-    display:none ;
+        display:none;
     }
-    nav
-    {
-    display:flex;
-    justify-content: space-around;
-    width: 100%;
-    }
- 
-    .header-hebergements
-    {
-    border-bottom: 3px solid  #0065FC;
-    padding-bottom:10px;
-    width: 50%;    
-    }
-    .header-activites
-    {
-    border-bottom: 3px solid #F2F2F2;
-    padding-bottom:10px;
-    width: 50%;   
-            
-    }
-    nav ul
-    {
-        display: flex;
-        align-content: stretch;
-        padding-top:5%;
-        width: 100%;
-        
-    } */
 
 
    .recherche-search2
@@ -542,35 +525,68 @@ footer p
 
 @media all and (min-device-width: 768px)
 {
-    /* header
-    {
-        display: flex;
-        justify-content: space-around;
-    }   
-     .header-inscription1
-    {
-    display:none ;
-    }
-    .header-hebergements
-    {
-    border-top: 5px solid  #0065FC;
-
-    }
-    .header-activites
-    {
-    border-top: 5px solid #F2F2F2;
-    }
-    nav ul 
-    {
-        margin-top: 2px;
-    } */
-    .recherche-search1
+    .header-inscription1
     {
         display:none;
     }
+    nav
+    {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+    }
+
+    .header-inscription2
+    {
+    color: #0065FC;
+    font-weight: 900;
+    
+    padding: 20px 40px 0 40px; 
+    }
+    .header-inscription2:hover
+    {
+    border-top:3px solid #0065FC;
+    text-shadow: 5px 5px 15px;
+    }
+    .header-hebergements
+    {
+    color: #0065FC;
+    font-weight: 900;
+    
+    border-bottom: none;
+    padding: 20px 15px 0 15px;
+    }
+    .header-hebergements:hover
+    {
+    border-top:3px solid #0065FC;
+    text-shadow: 5px 5px 15px;
+    }
+    .header-activites
+    {
+    color:black;
+    font-weight: 900;
+    border-bottom: none;
+    padding: 20px 40px 0 40px;
+    }
+    .header-activites:hover
+    {
+    border-top:3px solid #F2F2F2;
+    text-shadow: 5px 5px 15px;
+    }
+    
     #recherche
     {
-        margin-left: 55px;
+        display: flex;
+        justify-content: center;
+        max-width:420px;
+        padding-top: 10px;
+        padding-bottom: 25px;
+        margin-left:10%;
+        
+    }
+    .recherche-search1
+    {
+        display:none;
     }
     /* ### Hotel à Marseille ### */
     .texte2-hotel2
@@ -622,11 +638,8 @@ footer p
     }
 
     
-    #hotel1 p
-    {
-        margin: 5px 20% 5px 20%;
-    }
-footer
+
+    footer
     {
         justify-content: space-between;
         flex-direction: row;
@@ -720,10 +733,12 @@ footer
     #activites-Marseille
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         background-color: white;
+        height:530px;
+
     }
     footer
     {
@@ -739,7 +754,7 @@ footer
             /* ####  Responsive          ###### */
             /* ####  Format desktop 1440 ###### */
             /* ################################ */
-@media all and (min-device-width: 1024px)
+@media all and (min-device-width: 1440px)
 {
     footer
     {
@@ -750,6 +765,60 @@ footer
         height: 218px;
                 
     }
-        
-
+    
+    .activite-vieuxport, .activite-calanques
+    {
+        height:445px;
+        width: 300px;
+        margin: 25px 40px 0 40px;
+    }
+    .activite-vieuxport img, .activite-calanques img
+    {
+        height: 390px;
+        width: 300px;
+    }
+    .activite-fort
+    {
+        height:235px;
+        width: 300px;
+        margin: 25px 0 20px 0;
+    }
+    .activite-fort img
+    {
+        height: 180px;
+        width: 300px; 
+    }
+    .activite-frioul
+    {
+        height:165px;
+        width: 300px;
+        margin: 25px 0 0 0;
+    }
+    .activite-frioul img
+    {
+        height: 110px;
+        width: 300px; 
+    }
+    .activite-garde
+    {
+        height:195px;
+        width: 300px;
+        margin: 25px 40px 0 0;
+    }
+    .activite-garde img
+    {
+        height: 140px;
+        width: 300px; 
+    }
+    .activite-longchamps
+    {
+        height:210px;
+        width: 300px;
+        margin: 40px 40px 0 0;
+    }
+    .activite-longchamps img
+    {
+        height: 155px;
+        width: 300px;
+    }
 }
