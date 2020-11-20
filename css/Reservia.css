@@ -30,20 +30,48 @@ ul
 }
 
 /*### Header + Nav ###*/
-
-.nav li
+header
 {
- display: inline;
-} 
+    display: flex;
+    flex-wrap: wrap;
+    height:130px;
+}
+
 header img
 {
-    padding: 5px 0 0 5px;
-    width: 20%;
+    margin: 10px 0 0 5%;
+    
 }
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width:50%;
+}
+.header-inscription
+{
+    color: #0065FC;
+    font-weight: 900;
+    margin-left:35%;
+    margin-top:35px;
+    
+}
+
+.header-inscription a:visited
+{
+    color: #0065FC;
+}
+
 .header-hebergements
 {
     color: #0065FC;
     font-weight: 900;
+    border-bottom:3px solid #0065FC;
+    padding:0 15% 0 25%;
+   
+ 
+    
 }
 .header-hebergements a:visited
 {
@@ -53,29 +81,16 @@ header img
 {
     color:black;
     font-weight: 900;
+    border-bottom:3px solid #F2F2F2;
+    padding:0 35% 0 35%;
+    
+    
 }
 .header-activites a:visited
 {
     color: black;
 }
-.header-inscription1
-{
-    color: #0065FC;
-    font-weight: 900;
-}
-.header-inscription2
-{
-    color: #0065FC;
-    font-weight: 900;
-}
-.header-inscription1 a:visited
-{
-    color: #0065FC;
-}
-.header-inscription2 a:visited
-{
-    color: #0065FC;
-}
+
 
 
 /* Texte trouvez votre hebergement en centre ville */
@@ -94,7 +109,7 @@ header img
     text-align: center;
     padding-left: 3%;
     padding-top: 5%;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     
 }
 /* Partie recherche */
@@ -141,6 +156,7 @@ input::-webkit-input-placeholder
     border-radius: 10px 10px 10px 10px;
     height: 50px;
     width: 50px; 
+    border:1px solid  #0065FC;
 }
 .recherche-search2
 {
@@ -150,6 +166,7 @@ input::-webkit-input-placeholder
     border-radius: 0px 10px 10px 0px;
     height: 50px;
     width: 135px; 
+    border:1px solid  #0065FC;
 }
 /* fin de la partie recherche */
 /* Filtre de recherche */
@@ -456,7 +473,7 @@ footer p
 @media all and (max-device-width: 767px)
 {
     /*### Header Nav Telephone ###*/
-    header
+    /* header
     {
     display: flex;
     justify-content: space-between;
@@ -477,10 +494,7 @@ footer p
     justify-content: space-around;
     width: 100%;
     }
-    .recherche-search2
-    {
-        display:none;
-    }
+ 
     .header-hebergements
     {
     border-bottom: 3px solid  #0065FC;
@@ -501,7 +515,14 @@ footer p
         padding-top:5%;
         width: 100%;
         
+    } */
+
+
+   .recherche-search2
+    {
+        display:none;
     }
+
     .texte2-hotel2
     {
         display:none; 
@@ -521,7 +542,7 @@ footer p
 
 @media all and (min-device-width: 768px)
 {
-    header
+    /* header
     {
         display: flex;
         justify-content: space-around;
@@ -542,7 +563,7 @@ footer p
     nav ul 
     {
         margin-top: 2px;
-    }
+    } */
     .recherche-search1
     {
         display:none;
