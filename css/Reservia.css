@@ -368,6 +368,10 @@ input::-webkit-input-placeholder
     margin: 5px 5% 5px 5%;
     
 }
+.carte-hotel2:hover
+{
+    box-shadow: 5px 5px 20px black;
+}
 .carte-hotel2 img
 {
     object-fit: cover;
@@ -455,7 +459,10 @@ input::-webkit-input-placeholder
    margin: 3% 0 0 6%;
    color: black;
 }
-
+.activite-vieuxport:hover, .activite-fort:hover, .activite-frioul:hover, .activite-calanques:hover, .activite-garde:hover, .activite-longchamps:hover
+{
+    box-shadow: 5px 5px 20px black;
+}
 
 /*### Bas de page Footer 3 elements ###*/
 
