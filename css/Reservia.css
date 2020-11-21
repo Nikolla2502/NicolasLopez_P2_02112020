@@ -99,7 +99,7 @@ nav
 /* Texte trouvez votre hebergement en centre ville */
 .texte1
 {
-    text-align: center;
+    
     font-size: 1.6em;
     font-weight: bold;
     
@@ -109,7 +109,7 @@ nav
 .texte2
 {
     
-    text-align: center;
+    
     padding-left: 3%;
     padding-top: 5%;
     padding-bottom: 20px;
@@ -178,7 +178,7 @@ input::-webkit-input-placeholder
 }
 /* fin de la partie recherche */
 /* Filtre de recherche */
-.filtres-title
+.filtres-title1
 {
     margin-left: 10px;
 }
@@ -257,7 +257,7 @@ input::-webkit-input-placeholder
 {
     display: flex;
     justify-content: space-between;
-    margin: 40px 0 25px 0;
+    
 }
 .populaires p
 {
@@ -276,10 +276,7 @@ input::-webkit-input-placeholder
     background-color:#F2F2F2;
     height: 580px;
     width: 100%;
-    
     padding-bottom: 25px;
-
-    
 }
 #hotel1 p
 {
@@ -335,18 +332,10 @@ input::-webkit-input-placeholder
 
 }
 /*## Hotel à Marseille ##*/
-.texte1-hotel2
+#hotel2 p
 {
-    font-size:1.17em ;
-    font-weight: 900;
-    align-items: left;
-    margin: 40px 75px 30px 5%; 
-}
-.texte2-hotel2
-{
-    font-size:1.17em ;
-    font-weight: 900;
-    margin: 40px 75px 30px 5%; 
+font-size:1.17em ;
+font-weight: 900;
 }
 #hotel2
 {
@@ -354,8 +343,6 @@ input::-webkit-input-placeholder
     flex-direction: column;
     align-items: center;
     background-color: white;
-    
-     
 }
 
 .carte-hotel2
@@ -407,7 +394,6 @@ input::-webkit-input-placeholder
 {
     font-size:1.17em ;
     font-weight: 900;
-    
     margin: 36px 75px 60px 20px;
 }
 .afficherplus2
@@ -415,7 +401,7 @@ input::-webkit-input-placeholder
     font-size:1.17em ;
     font-weight: 900;
     align-items: center;
-    margin: 0 75px 60px 10%;
+    
 } 
 /*### activites à Marseille ###*/
 
@@ -432,8 +418,6 @@ input::-webkit-input-placeholder
 {
     font-size:1.17em ;
     font-weight: 900;
-    margin: 0 0 7px 5%; 
-    vertical-align: auto;
 }
 
 .activite-vieuxport, .activite-fort, .activite-frioul, .activite-calanques, .activite-garde, .activite-longchamps
@@ -495,33 +479,74 @@ footer p
 {
     color: black;
 }
-
-            /* ############################# */
-            /* ###   Responsive       ###### */
-            /* ### Format Telephone   ###### */
-            /* ############################# */
+footer a:hover
+{
+    text-shadow: 5px 5px 15px;
+}
+            /* ################################# */
+            /* ###   Responsive           ###### */
+            /* ### Format Telephone  -767 ###### */
+            /* ################################# */
 @media all and (max-device-width: 767px)
 {
     .header-inscription2
     {
         display:none;
     }
+    .texte1
+    {
+        text-align: center;
+        font-size: 1.6em;
+        font-weight: bold;
+        
+        padding-top: 35px;
+    }
+    .texte2
+    {
+        
+        text-align: center;
+        padding-left: 3%;
+        padding-top: 5%;
+        padding-bottom: 20px;
+    }
+    .populaires
+    {
 
+    margin: 40px 0 25px 0;
+    }
 
    .recherche-search2
     {
         display:none;
     }
-
+    .filtres-title2
+    {
+        display:none;
+    }
+    .texte1-hotel2
+    {
+    font-size:1.17em ;
+    font-weight: 900;
+    align-items: left;
+    margin: 40px 75px 30px 5%; 
+    }
     .texte2-hotel2
     {
         display:none; 
+    }
+    .afficherplus1
+    {
+    margin: 36px 75px 60px 20px;
     }
     .afficherplus2
     {
         display:none;
     }
-    
+    .texte-activites
+    {
+    margin: 0 0 7px 5%; 
+    vertical-align: auto;
+    }
     /*### Header Nav Telephone ### Fin ###*/
 } 
 
@@ -534,7 +559,7 @@ footer p
 {
     .header-inscription1
     {
-        display:none;
+    display:none;
     }
     nav
     {
@@ -580,6 +605,21 @@ footer p
     border-top:3px solid #F2F2F2;
     text-shadow: 5px 5px 15px;
     }
+    .texte1
+    {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding-top: 35px;
+    padding-left: 50px ;
+   
+    }
+    .texte2
+    {
+    padding-left: 3%;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    padding-left: 50px ;
+    }
     
     #recherche
     {
@@ -588,14 +628,41 @@ footer p
         max-width:420px;
         padding-top: 10px;
         padding-bottom: 25px;
-        margin-left:10%;
+        margin-left:50px;
         
     }
     .recherche-search1
     {
         display:none;
     }
+    .filtres-title2
+    {
+        display:none;
+    }
+    .populaires
+    {
+
+    margin: 0 0 30px 0;
+    }
+    #hotel1
+    {
+
+        height: 625px;
+        width: 420px;
+        padding-top:45px;
+        padding-bottom:35px;
+        border-radius: 30px;
+        margin: 0 0 0 22%;
+        
+    }
     /* ### Hotel à Marseille ### */
+    .texte1-hotel2
+    {
+    font-size:1.17em ;
+    font-weight: 900;
+    align-items: left;
+    margin: 40px 75px 30px 5%; 
+    }
     .texte2-hotel2
     {
         display:none; 
@@ -622,8 +689,9 @@ footer p
     }
     .afficherplus2
     {
-        display:center;
-    }
+    align-items: center;
+    margin: 0 75px 60px 10%;
+    } 
 
     
     /* ### Activités à Marseille ###*/
@@ -634,7 +702,6 @@ footer p
     flex-wrap: wrap;
     background-color: white;
     }
-
     .activite
     {
     height:190px;
@@ -643,15 +710,16 @@ footer p
     border-radius: 25px;
     margin: 2% 2% 0 2%;
     }
-
+    .texte-activites
+    {
+    margin: 0 0 7px 5%; 
+    }
     
-
     footer
     {
         justify-content: space-between;
         flex-direction: row;
-        background-color:#F2F2F2;
-        padding: 50px 370px 55px 50px;
+        padding: 20px 20px 0 15px;
         height: 218px;
         
     }
@@ -671,6 +739,15 @@ footer p
         flex-direction:row-reverse;
         justify-content: center;
     }
+    .filtres-title1
+    {
+        display:none;
+    }
+    .filtres-title2
+    {
+        display:inline;
+        padding: 18px;
+    }
 
     #hotel1
     {
@@ -683,7 +760,7 @@ footer p
         padding-top:45px;
         padding-bottom:35px;
         border-radius: 30px;
-        margin: 0 0 0 2%;
+        margin: 0 0 15px 2%;
         
     }
     .carte-hotel1
@@ -699,8 +776,11 @@ footer p
     {
         display:none; 
     }
-    .texte2-hotel2{
+    .texte2-hotel2
+    {
         display: inline;
+        margin:45px 400px 25px 40px;
+       
     }
     #hotel2
     {
@@ -711,13 +791,7 @@ footer p
         width: 880px;
         border-radius: 30px;
     }
-    #hotel2 p
-    {
-    font-size:1.17em ;
-    font-weight: 900;
-    margin: 0 20% 5px 25%; 
-    
-    }
+ 
     .carte-hotel2
     {
         background-color: white;
@@ -725,7 +799,8 @@ footer p
         width: 245px;
         border-radius: 30px;
         box-shadow: 1px 1px 30px #c2bfbf;
-        /* margin: 0% 5% 5% 5%; */
+        margin-left: 28px;
+        
         
     }
     .carte-hotel2 img
@@ -737,6 +812,21 @@ footer p
         margin: 5px 0 0 5px;
      
     }
+    .afficherplus2
+    {
+    
+    align-items: center;
+    margin: 0 75px 20px 40px;
+    
+    } 
+
+    .texte-activites
+    {
+    font-size:1.17em ;
+    font-weight: 900;
+    padding: 30px 0 0 50px;
+    
+    }
     #activites-Marseille
     {
         display: flex;
@@ -744,17 +834,16 @@ footer p
         flex-wrap: wrap;
         align-items: center;
         background-color: white;
-        height:530px;
+        height:700px;
 
     }
     footer
     {
         justify-content: space-between;
         flex-direction: row;
-        background-color:#F2F2F2;
-        padding: 50px 370px 55px 50px;
+        padding: 50px 150px 55px 50px;
         height: 218px;
-        
+            
     }
 }
             /* ################################ */
@@ -763,16 +852,25 @@ footer p
             /* ################################ */
 @media all and (min-device-width: 1440px)
 {
-    footer
-    {
-        justify-content: space-between;
-        flex-direction: row;
-        background-color:#F2F2F2;
-        padding: 50px 370px 55px 50px;
-        height: 218px;
-                
-    }
     
+    .filtres-title1
+    {
+        display:none;
+    }
+    .filtres-title2
+    {
+        display:inline;
+        padding: 18px;
+    }
+    #activites-Marseille
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: white;
+        height:530px;
+    }
     .activite-vieuxport, .activite-calanques
     {
         height:445px;
@@ -828,4 +926,11 @@ footer p
         height: 155px;
         width: 300px;
     }
+    footer
+    {
+    padding: 50px 370px 55px 50px;
+    height: 218px;
+    }
+   
+
 }
