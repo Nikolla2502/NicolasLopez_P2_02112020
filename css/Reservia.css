@@ -43,13 +43,15 @@ nav
 {
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
     height: 30px;
     width:50%;
+    
 }
 .header-inscription1
 {
     color: #0065FC;
-    font-weight: 900;
+    font-weight: bold;
     margin-left:35%;
     margin-top:35px;
     
@@ -70,12 +72,9 @@ nav
 .header-hebergements
 {
     color: #0065FC;
-    font-weight: 900;
     border-bottom:3px solid #0065FC;
     padding:0 15% 0 25%;
-   
- 
-    
+       
 }
 .header-hebergements a:visited
 {
@@ -84,7 +83,6 @@ nav
 .header-activites
 {
     color:black;
-    font-weight: 900;
     border-bottom:3px solid #F2F2F2;
     padding:0 35% 0 35%;
     
@@ -102,8 +100,7 @@ nav
 {
     
     font-size: 1.6em;
-    font-weight: bold;
-    
+    font-weight: 900;
     padding-top: 35px;
    
 }
@@ -140,8 +137,8 @@ input::placeholder
     color: black;
     background-color: white;
     padding: 12px;
-    font-weight: 900;
-    font-family: 'Raleway';
+    font-weight: bold;
+    
 }
 .recherche-lieu
 {
