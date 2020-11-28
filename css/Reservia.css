@@ -31,50 +31,31 @@ header
 {
     display: flex;
     flex-wrap: wrap;
-    height:130px;
 }
 
-header img
-{
-    margin: 10px 0 0 5%;
-    
-}
 nav
 {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    height: 30px;
-    width:50%;
-    
 }
 .header-inscription1
 {
     color: #0065FC;
     font-weight: bold;
-    margin-left:35%;
-    margin-top:35px;
-    
 }
-
 .header-inscription1 a:visited
 {
     color: #0065FC;
 }
-
-
 .header-inscription2 a:visited
 {
     color: #0065FC;
 }
 
-
 .header-hebergements
 {
     color: #0065FC;
-    border-bottom:3px solid #0065FC;
-    padding:0 15% 0 25%;
-       
 }
 .header-hebergements a:visited
 {
@@ -83,49 +64,35 @@ nav
 .header-activites
 {
     color:black;
-    border-bottom:3px solid #F2F2F2;
-    padding:0 35% 0 35%;
-    
-    
 }
 .header-activites a:visited
 {
     color: black;
 }
 
-
-
 /* Texte trouvez votre hebergement en centre ville */
 .texte1
 {
-    
     font-size: 1.6em;
-    font-weight: 900;
-    padding-top: 35px;
-   
-}
-.texte2
-{
-    
-    
-    padding-left: 3%;
-    padding-top: 5%;
-    padding-bottom: 20px;
-    
+    font-weight: 700;
 }
 /* Partie recherche */
-#recherche
+.recherche
 {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     max-width:420px;
-    padding-top: 10px;
-    padding-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left:35px;
+    margin-right: 35px;
+    border:1px solid#F2F2F2;
+    border-radius:15px;
 }
 .recherche-position
 {
     background-color:#F2F2F2;
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
     height: 50px;
     width: 50px; 
     padding: 17px 0 0 20px;;
@@ -138,15 +105,16 @@ input::placeholder
     background-color: white;
     padding: 12px;
     font-weight: bold;
+    font-family:'Raleway';
     
 }
 .recherche-lieu
 {
     
-    font-size: 1.5em;
-    width:60%;
-    border-bottom : 2px solid #F2F2F2;
-    border-top:   2px solid #F2F2F2;
+    font-size: 1.2em;
+    width:70%;
+    border-bottom : 1px solid #F2F2F2;
+    border-top:   1px solid #F2F2F2;
     border-right: 0 solid white;
     border-left: 0 solid white;
 }
@@ -154,10 +122,12 @@ input::placeholder
 {
     color: white;
     background-color: #0065FC;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 15px 15px 15px 15px;
     height: 50px;
     width: 50px; 
     border:1px solid  white;
+    
+
 }
 recherche-search1:hover
 {
@@ -335,10 +305,10 @@ recherche-search1:hover
 
 }
 /*## Hotel à Marseille ##*/
-#hotel2 p
+.texte1-hotel2
 {
-font-size:1.17em ;
-font-weight: 900;
+font-size: 1.3em;
+font-weight: bold;
 }
 #hotel2
 {
@@ -395,14 +365,13 @@ font-weight: 900;
 }
 .afficherplus1
 {
-    font-size:1.17em ;
-    font-weight: 900;
-    margin: 36px 75px 60px 20px;
+    font-size:1.20em ;
+    font-weight: bold;
 }
 .afficherplus2
 {
-    font-size:1.17em ;
-    font-weight: 900;
+    font-size:1.20em ;
+    font-weight: bold;
     align-items: center;
     
 } 
@@ -420,7 +389,7 @@ font-weight: 900;
 .texte-activites
 {
     font-size:1.17em ;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .activite-vieuxport, .activite-fort, .activite-frioul, .activite-calanques, .activite-garde, .activite-longchamps
@@ -471,7 +440,7 @@ footer
 footer p
 {
     font-size:1.17em ;
-    font-weight: 900;
+    font-weight: bold;
     line-height: 180%;
 }
 .bloc-footer a:visited
@@ -492,25 +461,46 @@ footer a:hover
             /* ################################# */
 @media all and (max-width: 767px)
 {
+    header
+    {
+    height:130px;
+    }
+    header img
+    {
+    margin: 30px 0 0 20px;
+    }
+    nav
+    {
+    height: 50px;
+    width:375px;
+    }
+    .header-inscription1
+    {
+    margin:55px 0 0 38%;
+    }
     .header-inscription2
     {
-        display:none;
+    display:none;
+    }
+    .header-hebergements
+    {
+    border-bottom:3px solid #0065FC;
+    padding:15px 0 0 40px;
+    width:50%;
+    }
+    .header-activites
+    {
+    border-bottom:3px solid #F2F2F2;
+    padding: 15px 0 0 55px;
+    width: 50%; 
     }
     .texte1
     {
-        text-align: center;
-        font-size: 1.6em;
-        font-weight: bold;
-        
-        padding-top: 35px;
+    padding: 35px 0 0 10px;
     }
     .texte2
     {
-        
-        text-align: center;
-        padding-left: 3%;
-        padding-top: 5%;
-        padding-bottom: 20px;
+    padding: 10px 0 25px 10px;    
     }
     .populaires
     {
@@ -528,8 +518,6 @@ footer a:hover
     }
     .texte1-hotel2
     {
-    font-size:1.17em ;
-    font-weight: 900;
     margin: 40px 75px 30px 5%; 
     }
     .texte2-hotel2
@@ -572,7 +560,7 @@ footer a:hover
     .header-inscription2
     {
     color: #0065FC;
-    font-weight: 900;
+    font-weight: bold;
     
     padding: 20px 40px 0 40px; 
     }
@@ -584,7 +572,7 @@ footer a:hover
     .header-hebergements
     {
     color: #0065FC;
-    font-weight: 900;
+    font-weight: bold;
     
     border-bottom: none;
     padding: 20px 15px 0 15px;
@@ -597,7 +585,7 @@ footer a:hover
     .header-activites
     {
     color:black;
-    font-weight: 900;
+    font-weight: bold;
     border-bottom: none;
     padding: 20px 40px 0 40px;
     }
