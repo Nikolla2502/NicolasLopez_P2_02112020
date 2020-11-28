@@ -37,12 +37,11 @@ nav
 {
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
 }
 .header-inscription1
 {
     color: #0065FC;
-    font-weight: bold;
+    font-weight: 800;
 }
 .header-inscription1 a:visited
 {
@@ -56,6 +55,7 @@ nav
 .header-hebergements
 {
     color: #0065FC;
+    font-weight: 400;
 }
 .header-hebergements a:visited
 {
@@ -64,6 +64,7 @@ nav
 .header-activites
 {
     color:black;
+    font-weight: 400;
 }
 .header-activites a:visited
 {
@@ -143,6 +144,7 @@ recherche-search1:hover
     height: 50px;
     width: 135px; 
     border:1px solid  white;
+    
 }
 .recherche-search2:hover
 {
@@ -308,7 +310,12 @@ recherche-search1:hover
 .texte1-hotel2
 {
 font-size: 1.3em;
-font-weight: bold;
+font-weight: 800;
+}
+.texte2-hotel2
+{
+    font-size:1.3em ;
+    font-weight: 800;
 }
 #hotel2
 {
@@ -388,8 +395,8 @@ font-weight: bold;
 }
 .texte-activites
 {
-    font-size:1.17em ;
-    font-weight: bold;
+    font-size:1.3em ;
+    font-weight: 800;
 }
 
 .activite-vieuxport, .activite-fort, .activite-frioul, .activite-calanques, .activite-garde, .activite-longchamps
@@ -546,6 +553,10 @@ footer a:hover
 
 @media all and (min-width: 768px)
 {
+    header img
+    {
+    margin: 30px 0 0 45px;
+    }
     .header-inscription1
     {
     display:none;
@@ -560,9 +571,8 @@ footer a:hover
     .header-inscription2
     {
     color: #0065FC;
-    font-weight: bold;
-    
-    padding: 20px 40px 0 40px; 
+    font-weight: 800;
+    padding: 40px 20px 0 20px; 
     }
     .header-inscription2:hover
     {
@@ -572,10 +582,9 @@ footer a:hover
     .header-hebergements
     {
     color: #0065FC;
-    font-weight: bold;
     
     border-bottom: none;
-    padding: 20px 15px 0 15px;
+    padding: 40px 10px 0 10px;
     }
     .header-hebergements:hover
     {
@@ -585,9 +594,9 @@ footer a:hover
     .header-activites
     {
     color:black;
-    font-weight: bold;
+   
     border-bottom: none;
-    padding: 20px 40px 0 40px;
+    padding: 40px 20px 0 20px;
     }
     .header-activites:hover
     {
@@ -604,10 +613,8 @@ footer a:hover
     }
     .texte2
     {
-    padding-left: 3%;
-    padding-top: 5%;
-    padding-bottom: 20px;
-    padding-left: 50px ;
+    padding: 5px 0 20px 50px;
+
     }
     
     #recherche
@@ -647,8 +654,6 @@ footer a:hover
     /* ### Hotel à Marseille ### */
     .texte1-hotel2
     {
-    font-size:1.17em ;
-    font-weight: 900;
     margin: 40px 75px 30px 5%; 
     }
     .texte2-hotel2
@@ -727,7 +732,11 @@ footer a:hover
                         /* ################################ */
 @media all and (min-width: 1024px)
 {
-
+    nav
+    {
+    width: 80%;
+    }
+    
     #corps
     {
         display: flex;
@@ -776,7 +785,8 @@ footer a:hover
     {
         display: inline;
         margin:45px 400px 25px 40px;
-       
+        font-weight: bold;
+        font-size: 1.20em;
     }
     #hotel2
     {
@@ -818,8 +828,8 @@ footer a:hover
 
     .texte-activites
     {
-    font-size:1.17em ;
-    font-weight: 900;
+    font-size:1.20em ;
+    font-weight: bold;
     padding: 30px 0 0 70px;
     
     }
