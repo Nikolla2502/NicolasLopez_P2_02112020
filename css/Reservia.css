@@ -81,7 +81,6 @@ nav
 .recherche
 {
     display: flex;
-    /* justify-content: center; */
     max-width:420px;
     margin-top: 10px;
     margin-bottom: 25px;
@@ -140,7 +139,8 @@ recherche-search1:hover
     color: white;
     background-color: #0065FC;
     font-size: 1.3em;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 15px 15px 0px;
+    padding: 0 15px 0 15px;
     height: 50px;
     width: 135px; 
     border:1px solid  white;
@@ -150,6 +150,7 @@ recherche-search1:hover
 {
     color:#0065FC;
     background-color:  white;
+    box-shadow: 1px 1px 10px #0065FC;
 }
 /* fin de la partie recherche */
 /* Filtre de recherche */
@@ -188,10 +189,11 @@ recherche-search1:hover
     justify-content: center;
     color: #0065FC;
 }
-.filtres-icone:hover
+.filtres-categorie:hover
 {
     color: #DEEBFF;
     background-color:#0065FC;
+    box-shadow:1px 1px 10px #0065FC;
 }
 
 .filtres-texte
@@ -291,7 +293,7 @@ recherche-search1:hover
 {
     margin: 2% 5% 6% 43%;
     color: black;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 0.98em;
 }
 .carte-hotel1 li
@@ -357,7 +359,7 @@ font-weight: 800;
 {
     margin: 1% 5% 0 5%;
     color: black;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 0.98em;
 }
 .carte-hotel2 li
@@ -457,6 +459,7 @@ footer p
 .bloc-footer a
 {
     color: black;
+    
 }
 footer a:hover
 {
