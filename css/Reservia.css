@@ -129,10 +129,11 @@ input::placeholder
     
 
 }
-recherche-search1:hover
+.recherche-search1:hover
 {
     color:#0065FC;
     background-color:  white;
+    box-shadow: 1px 1px 10px #0065FC;
 }
 .recherche-search2
 {
@@ -488,6 +489,11 @@ footer a:hover
     {
     margin:55px 0 0 38%;
     }
+    .header-inscription1:hover
+    {
+        font-weight:900;
+        text-shadow: 5px 5px 15px;
+    }
     .header-inscription2
     {
     display:none;
@@ -498,11 +504,21 @@ footer a:hover
     padding:15px 0 0 40px;
     width:50%;
     }
+    .header-hebergements:hover
+    {
+        font-weight:600;
+        text-shadow: 10px 10px 20px;
+    }
     .header-activites
     {
     border-bottom:3px solid #F2F2F2;
     padding: 15px 0 0 55px;
     width: 50%; 
+    }
+    .header-activites:hover
+    {
+        font-weight:600;
+        text-shadow: 10px 10px 20px;
     }
     .texte1
     {
