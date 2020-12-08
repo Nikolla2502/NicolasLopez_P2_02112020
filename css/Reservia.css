@@ -483,7 +483,7 @@ footer a:hover
     nav
     {
     height: 50px;
-    width:375px;
+    width:100%;
     }
     .header-inscription1
     {
@@ -501,7 +501,7 @@ footer a:hover
     .header-hebergements
     {
     border-bottom:3px solid #0065FC;
-    padding:15px 0 0 40px;
+    padding:15px 0 0 15%;
     width:50%;
     }
     .header-hebergements:hover
@@ -512,7 +512,7 @@ footer a:hover
     .header-activites
     {
     border-bottom:3px solid #F2F2F2;
-    padding: 15px 0 0 55px;
+    padding: 15px 0 0 15%;
     width: 50%; 
     }
     .header-activites:hover
