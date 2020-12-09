@@ -81,6 +81,7 @@ nav
 .recherche
 {
     display: flex;
+    justify-content: space-between;
     max-width:420px;
     margin-top: 10px;
     margin-bottom: 25px;
