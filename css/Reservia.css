@@ -11,7 +11,7 @@ body
 {
    font-family: 'Raleway' , sans-serif;
     margin: auto;
-    max-width: 1440px;
+    
 }
 
 /* fin de la remise a zero */
@@ -903,6 +903,7 @@ footer a:hover
         align-items: center;
         background-color: white;
         height:530px;
+        
         
     }
     .activite-vieuxport, .activite-calanques
