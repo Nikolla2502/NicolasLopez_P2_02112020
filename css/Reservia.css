@@ -900,11 +900,9 @@ footer a:hover
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-items: center;
         background-color: white;
         height:530px;
-        
-        
+       
     }
     .activite-vieuxport, .activite-calanques
     {
