@@ -1,7 +1,7 @@
 # NicolasLopez_P2_02112020
 Deuxième projet du parcours "Développeur web" chez OpenClassroom. L'objectif est d'intégrer la maquette d'un site de planification de vacance nommé "Reservia" <br/>
 <figure>
-<img src="https://github.com/Nikolla2502/NicolasLopez_P2_02112020/blob/master/images/Desktop%20-%201.png" alt="maquette desktop">
+<img src="https://github.com/Nikolla2502/NicolasLopez_P2_02112020/blob/master/Desktop%20-%201.png" alt="maquette desktop">
 </figure>
 <h1>Éléments fournis par l'entreprise virtuelle.</h1><br/>
 La maquette pour les résolutions ordinateur et téléphone nous est donné.<br/>
